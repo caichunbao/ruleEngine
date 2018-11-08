@@ -7,7 +7,6 @@
   "author": "caichunbao <vipcaichunbao@163.com>",
   "license": "MIT",
   "devDependencies": {
-    "bootstrap": "3.3.7",
     "jquery": "^3.3.1"
   }
 }
