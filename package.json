@@ -6,7 +6,7 @@
   "repository": "https://github.com/caichunbao/ruleEngine.git",
   "author": "caichunbao <vipcaichunbao@163.com>",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "bootstrap": "3.3.7",
     "jquery": "^3.3.1"
   }
