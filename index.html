@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+  <script src="./node_modules/jquery/dist/jquery.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <title>引擎规则</title>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="jumbotron">
+            <h1>Rule Engine</h1>
+            <p class="text-small"></p>
+            <a href="https://github.com/caichunbao/ruleEngine" class="btn btn-primary btn-lg" target="_blank">learn more</a>
+        </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div id="tag_box" style="padding: 15px;border: 1px solid #ddd;border-radius: 5px;margin: 10px">
+          <label class="btn btn-default"><input type="checkbox" value="标签1">标签1</label>
+          <label class="btn btn-default"><input type="checkbox" value="标签2">标签2</label>
+          <label class="btn btn-default"><input type="checkbox" value="标签3">标签3</label>
+          <label class="btn btn-default"><input type="checkbox" value="标签4">标签4</label>
+          <label class="btn btn-default"><input type="checkbox" value="标签5">标签5</label>
+          <label class="btn btn-default"><input type="checkbox" value="标签6">标签6</label>
+          <label class="btn btn-default"><input type="checkbox" value="标签7">标签7</label>
+          <label class="btn btn-default"><input type="checkbox" value="标签8">标签8</label>
+          <label class="btn btn-default"><input type="checkbox" value="标签9">标签9</label>
+          <label class="btn btn-default"><input type="checkbox" value="标签10">标签10</label>
+          <label class="btn btn-default"><input type="checkbox" value="标签11">标签11</label>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form">
+          <div class="form-group">
+            <label>匹配内容</label>
+            <input id="rule_text" type="text" class="form-control" placeholder="规则1,规则2,...">
+          </div>
+          <div class="form-group">
+            <label>规则名称</label>
+            <input id="rule_name" type="text" class="form-control" placeholder="!rule||(rule&rule)">
+          </div>
+          <span class="btn btn-success" id="my_btn">submit</span>
+          <div style="margin-top: 10px;padding:15px;border: 1px solid #dddddd;border-radius: 5px">
+            <p style="margin: 0;line-height: 26px" class="text-info">匹配内容：<span id="rule_text_box"></span></p>
+            <p style="margin: 0;line-height: 26px" class="text-info">规则名称：<span id="rule_name_box"></span></p>
+            <p style="margin: 0;line-height: 26px" class="text-info">匹配结果：<span id="rule_result"></span></p>
+            <p style="margin: 0;line-height: 26px" class="text-info">试用场景：(a||b||c)&(d||e||f),(标签1||标签2||标签3)&(标签4||标签5)<span id="rule_result"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./core/core.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>

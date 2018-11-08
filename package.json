@@ -1,0 +1,13 @@
+{
+  "name": "ruleEngine",
+  "version": "1.0.0",
+  "description": "规则引擎",
+  "main": "index.js",
+  "repository": "https://github.com/caichunbao/ruleEngine.git",
+  "author": "caichunbao <vipcaichunbao@163.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "3.3.7",
+    "jquery": "^3.3.1"
+  }
+}
